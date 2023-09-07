@@ -6,121 +6,46 @@
     </div>
     <nav class="header__menu">
       <ul>
-        <li><input type="text"></li>
-        <li><a href="#" class="link">Фильтры</a></li>
+        <li><input-search/></li>
+        <li><head-link>Фильтры</head-link></li>
       </ul>
 
       <ul>
-        <li><a href="#" class="link">Добавить запись</a></li>
-        <li><a href="#" class="link">Учетная запись</a></li>
+        <li><head-link>Добавить запись</head-link></li>
+        <li><head-link>Учетная запись</head-link></li>
       </ul>
 
     </nav>
   </header>
 
-  <main class="main">
-    <aside class="aside">
-      <nav>
-        <ul>
-          <li>Таблицы</li>
-          <li><a href="#" class="link laside">Цех</a></li>
-          <li><a href="#" class="link laside">Участок</a></li>
-          <li><a href="#" class="link laside">Начальник цеха</a></li>
-          <li><a href="#" class="link laside">Начальник участка</a></li>
-          <li><a href="#" class="link laside">Бригада</a></li>
-          <li><a href="#" class="link laside">Бригада_участок</a></li>
-          <li><a href="#" class="link laside">Тип изделия</a></li>
-          <li><a href="#" class="link laside">Изделие</a></li>
-          <li><a href="#" class="link laside">Продукт</a></li>
-        </ul>
-      </nav>
-    </aside>
+  <main-content>
 
+  <aside-menu/>
+<section-main>
+        <item-el>
+          <li><strong>ФИО:</strong> dsfsdfs EFIM Андреевич</li>
+            <li><strong>sdfsdfs</strong> 21.11.2002</li>
+        </item-el>
+        <item-el>
+          <li><strong>ФИО:</strong> dsfsdfs EFIM Андреевич</li>
+            <li><strong>sdfsdfs</strong> 21.11.2002</li>
+        </item-el>
+        <item-el>
+          <li><strong>ФИО:</strong> dsfsdfs EFIM Андреевич</li>
+            <li><strong>sdfsdfs</strong> 21.11.2002</li>
+        </item-el>
+        <item-el>
+          <li><strong>ФИО:</strong> dsfsdfs EFIM Андреевич</li>
+            <li><strong>sdfsdfs</strong> 21.11.2002</li>
+        </item-el>
+        <item-el>
+          <li><strong>ФИО:</strong> dsfsdfs EFIM Андреевич</li>
+            <li><strong>sdfsdfs</strong> 21.11.2002</li>
+        </item-el>
+</section-main>
 
-
-    <section>
-      <div class="block">
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-        <div class="item">
-          <ul>
-            <li><strong>ФИО:</strong> Ноздряков Артем Андреевич</li>
-            <li><strong>Дата рождения:</strong> 21.11.2002</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-  </main>
+   
+  </main-content>
 </template>
 
 <script>
@@ -138,10 +63,6 @@ export default {
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   color: #000;
-}
-
-nav {
-
 }
 
 footer {
@@ -184,52 +105,11 @@ body {
 }
 
 
-.link{
-  display: flex;
-  padding: 10px 35px;
-  align-items: center;
-  cursor: pointer;
-  white-space: nowrap;
-  text-align: center;
-  justify-content: center;
-  font-family: Nunito;
-  font-size: 14px;
-  background: #FFFFFF;
-  border: 1px solid #D4D4D4;
-  box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-
-  width: 180px;
-}
-.link:hover{
-  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.25);
-}
-input{
-  max-width: 550px;
-  width: 100%;
-
-  padding: 10px 15px;
-  font-size: 16px;
-
-  font-family: Nunito;
-  background: #FFFFFF;
-  border: 1px solid #D4D4D4;
-  box-shadow: -4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
-  -webkit-transition: ease-out 0.4s;
-  -moz-transition: ease-out 0.4s;
-  transition: ease-out 0.4s;
-  outline: none;
-}
 
 
-.main {
-  flex: 1;
-  padding: 21vh 0 0 0;
-}
+
+
+
 
 
 .header__body ul {
@@ -252,11 +132,7 @@ input{
 
 }
 
-.main {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-}
+
 
 .aside {
   position: fixed;
@@ -268,75 +144,5 @@ input{
   justify-content: center;
 }
 
-section {
-  flex: 1;
-  /* occupe la hauteur restante  */
-  margin-left: 20%;
-}
-
-section p {
-  margin-bottom: 32px;
-  text-align: justify;
-}
-
-
-
-
-aside {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-
-aside nav {
-  display: flex;
-  flex-flow: column wrap;
-  flex: 1;
-  position: relative;
-  background-color: #F1FBFF;
-
-}
-
-
-
-aside ul {
-  flex: 1;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: stretch;
-  justify-content: space-evenly;
-  padding: 0 2rem;
-}
-
-aside li {
-  display: flex;
-
-
-}
-
-.laside,
-aside li {
-  width: 100%; /* Устанавливаем ширину на 100% */
-  max-width: 200px; /* Максимальная ширина для резиновости */
-  margin: 0 auto; /* Центрируем элементы внутри aside */
-}
-
-.block {
-  display: flex;
-  justify-content: space-between;
-  max-width: calc(100% - 32%);
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-.item {
-  border: 1px solid #715ECE;
-  width: 45%;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #f7f7f7; /* Цвет фона */
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Небольшая тень */
-  margin-bottom: 25px;
-}
 
 </style>

@@ -8,6 +8,13 @@ import BoxMenu from "@/components/UI/BoxMenu.vue";
 import MyButton from "@/components/UI/MyButton.vue";
 import MySuptitle from "@/components/UI/MySuptitle.vue";
 import MyInput from "@/components/UI/MyInput.vue";
+import MainContent from "@/components/UI/MainContent.vue";
+import AsideMenu from "@/components/UI/AsideMenu.vue";
+import SectionMain from "@/components/UI/SectionMain.vue";
+import InputSearch from "@/components/UI/InputSearch.vue";
+import HeadLink from "@/components/UI/HeadLink.vue";
+import ItemEl from "@/components/UI/ItemEl.vue";
+
 
 export default [
     LoginButton,
@@ -19,5 +26,11 @@ export default [
     BoxMenu,
     MyButton,
     MySuptitle,
-    MyInput
+    MyInput,
+    MainContent,
+    AsideMenu,
+    SectionMain,
+    InputSearch,
+    HeadLink,
+    ItemEl
 ];
