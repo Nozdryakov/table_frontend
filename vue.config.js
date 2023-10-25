@@ -1,4 +1,17 @@
-const { defineConfig } = require('@vue/cli-service')
+const { defineConfig } = require('@vue/cli-service');
+
 module.exports = defineConfig({
-  transpileDependencies: true
-})
+  transpileDependencies: [
+    'axios', // Пример: транспилировать зависимость Axios
+    // Добавьте другие зависимости, которые вам необходимо транспилировать
+  ],
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:7777', // Адрес вашего Laravel API
+        ws: true,
+        changeOrigin: true,
+      },
+    },
+  },
+});

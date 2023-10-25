@@ -6,6 +6,7 @@ import Department from "@/views/Department.vue";
 import Area from "@/views/Area.vue";
 import HeadOfDepartment from "@/views/HeadOfDepartment.vue";
 
+
 const routes = [
   {
     path: '/',

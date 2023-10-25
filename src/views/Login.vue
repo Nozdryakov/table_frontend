@@ -4,9 +4,9 @@
             <div class="content__section">
                 <login-title>Введите ваш логин и пароль</login-title>
                 <login-form>
-                    <login-input placeholder="Логин"></login-input>
-                    <login-input placeholder="Пароль" type="password"></login-input>
-                    <login-button>Войти</login-button>
+                    <login-input v-model="email" placeholder="Логин" @input="handleEmailInput"></login-input>
+                    <login-input v-model="password" placeholder="Пароль" type="password" @input="handlePasswordInput"></login-input>
+                    <login-button @click.prevent="fetchData" >Войти</login-button>
                     <span>или</span>
                     <button @click="$router.push('/registration')">Зарегистрироваться</button>
                 </login-form>
@@ -20,13 +20,51 @@ import LoginButton from "@/components/UI/LoginButton.vue";
 import LoginTitle from "@/components/UI/LoginTitle.vue";
 import LoginForm from "@/components/UI/LoginForm.vue";
 import LoginInput from "@/components/UI/LoginInput.vue";
+import axios from "axios";
+import router from "@/router";
 
 
 
 export default {
-    components: {LoginInput, LoginForm, LoginTitle, LoginButton}
+    components: {LoginInput, LoginForm, LoginTitle, LoginButton},
+  data() {
+    return {
+      email: null,
+      password: null,
+    }
+  },
+  methods: {
+    handleEmailInput(event) {
+      this.email = event.target.value;
+    },
+    handlePasswordInput(event) {
+      this.password = event.target.value;
+    },
+    async fetchData() {
+      try {
+        const payload = {
+          email: this.email,
+          password: this.password,
+        };
 
-}
+        const response = await axios.post('http://localhost:7777/api/auth/login', JSON.stringify(payload), {
+          headers: {
+            'Content-Type': 'application/json',
+          },
+        }).then(response => {
+          localStorage.token = response.data.authorization.token
+        });
+
+
+
+      } catch (error) {
+        // Handle error if something went wrong
+        console.error(error.response.data.errors);
+      }
+      this.$router.push('/head-of-dep');
+    },
+  }
+  }
 </script>
 
 <style scoped>

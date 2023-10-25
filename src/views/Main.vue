@@ -26,7 +26,13 @@ import BaseIcon from "@/components/BaseIcon.vue"
 import "@/assets/fonts/nunito.css"
 
 export default {
-    components: {BaseIcon}
+    components: {BaseIcon},
+
+  mounted() {
+    setTimeout(() => {
+      this.$router.push('/head-of-dep');
+    }, 2500);
+  },
 
 }
 </script>

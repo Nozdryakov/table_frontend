@@ -15,8 +15,8 @@ export default {
 <style scoped>
 section {
   flex: 1;
-  /* occupe la hauteur restante  */
   margin-left: 20%;
+  padding: 32px;
 }
 
 section p {
