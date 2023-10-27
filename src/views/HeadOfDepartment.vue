@@ -28,11 +28,18 @@
   <aside-menu/>
 <section-main>
   <div v-if="isLoading">Загрузка...</div>
-  <item-el v-for="head in head_d" :key="head.head_of_dep_id">
-    <li><strong>Id:</strong> {{ head.head_of_dep_id }}</li>
-    <li><strong>Фамилия:</strong> {{ head.surname }}</li>
-    <li><strong>Имя:</strong> {{ head.name }}</li>
-    <li><strong>Отчество:</strong> {{ head.f_name }}</li>
+<!--  <item-el v-for="head in head_d" :key="head.head_of_dep_id">-->
+<!--    <li><strong>Id:</strong> {{ head.head_of_dep_id }}</li>-->
+<!--    <li><strong>Фамилия:</strong> {{ head.surname }}</li>-->
+<!--    <li><strong>Имя:</strong> {{ head.name }}</li>-->
+<!--    <li><strong>Отчество:</strong> {{ head.f_name }}</li>-->
+<!--  </item-el>-->
+
+  <item-el>
+    <li><strong>Id:</strong></li>
+    <li><strong>Фамилия:</strong></li>
+    <li><strong>Имя:</strong></li>
+    <li><strong>Отчество:</strong></li>
   </item-el>
 
 
@@ -56,10 +63,10 @@ export default {
     }
   },
 
-  mounted() {
-
-    this.fetchData();
-  },
+  // mounted() {
+  //
+  //   this.fetchData();
+  // },
   methods: {
     fetchData() {
       API.get('http://localhost:7777/api/auth/get-table')
@@ -71,7 +78,7 @@ export default {
             console.error("Ошибка:", error);
             this.$router.push('/login');
           }).finally(() => {
-        this.isLoading = false; // После завершения запроса устанавливаем isLoading в false
+        this.isLoading = false;
       });
     },
     logout(){
@@ -147,15 +154,7 @@ body {
 }
 
 
-.aside {
-  position: fixed;
-  z-index: 15;
-  width: 20%;
-  top: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-}
+
 
 
 
@@ -182,6 +181,13 @@ body {
   visibility: visible;
 }
 
+@media (max-width: 1179px) {
+  .header__body{
+    height: 185px;
+    margin-left: 0;
+    width: 100%;
+  }
+}
 
 
 </style>
