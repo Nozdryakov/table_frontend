@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     checkWindowSize() {
-      this.isMobile = window.innerWidth < 1180;
+      this.isMobile = window.innerWidth < 1225;
     },
     toggleMobileMenu() {
       this.isMobileMenuOpen = !this.isMobileMenuOpen;
@@ -131,7 +131,7 @@ aside ul {
 }
 
 /* Мобильная версия */
-@media (max-width: 1179px) {
+@media (max-width: 1225px) {
   .aside {
     display: flex;
     justify-content: center;

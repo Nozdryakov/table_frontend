@@ -182,7 +182,7 @@ body {
   visibility: visible;
 }
 
-@media (max-width: 1179px) {
+@media (max-width: 1225px) {
   .header__body{
     height: 230px;
     margin-left: 0;
@@ -203,9 +203,6 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: 16px;
-  }
-  .line_input li{
-
   }
 }
 

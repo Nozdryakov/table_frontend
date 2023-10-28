@@ -15,8 +15,7 @@ export default {
 <style scoped>
 section {
   flex: 1;
-  margin-left: 20%;
-  padding: 32px;
+  margin: 50px 0px 0px calc(20% + 15px);
 }
 
 section p {
@@ -30,7 +29,7 @@ section p {
   width: 100%;
   flex-wrap: wrap;
 }
-@media (max-width: 1179px) {
+@media (max-width: 1225px) {
 section{
   margin: 100px 15px;
   padding: 0;
