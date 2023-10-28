@@ -5,7 +5,7 @@
       <div class="title">Начальники</div>
     </div>
     <nav class="header__menu">
-      <ul>
+      <ul class="line_input">
         <li><input-search/></li>
         <li><head-link>Фильтры</head-link></li>
       </ul>
@@ -27,7 +27,7 @@
 
   <aside-menu/>
 <section-main>
-  <div v-if="isLoading">Загрузка...</div>
+<!--  <div v-if="isLoading">Загрузка...</div>-->
 <!--  <item-el v-for="head in head_d" :key="head.head_of_dep_id">-->
 <!--    <li><strong>Id:</strong> {{ head.head_of_dep_id }}</li>-->
 <!--    <li><strong>Фамилия:</strong> {{ head.surname }}</li>-->
@@ -115,6 +115,7 @@ body {
   position: fixed; /* Фиксируем header на экране */
   z-index: 10; /* Установите значение z-index */
   background-color: #F1FBFF;
+  height: 185px;
 }
 .color__back{
   display: flex;
@@ -145,12 +146,12 @@ body {
 }
 
 .header__menu li {
-  height: 10vh;
+  //height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex: 1;
-  margin-left: 32px;
+  margin: 15px 15px;
 }
 
 
@@ -183,9 +184,28 @@ body {
 
 @media (max-width: 1179px) {
   .header__body{
-    height: 185px;
+    height: 230px;
     margin-left: 0;
     width: 100%;
+  }
+
+  .header__menu li {
+    flex: 0.5;
+
+    margin: 5px 15px;
+  }
+
+  .header__menu li input-search {
+    width: 100%;
+  }
+
+  .line_input {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+  }
+  .line_input li{
+
   }
 }
 

@@ -30,5 +30,11 @@ section p {
   width: 100%;
   flex-wrap: wrap;
 }
+@media (max-width: 1179px) {
+section{
+  margin: 100px 15px;
+  padding: 0;
+}
+}
 
 </style>

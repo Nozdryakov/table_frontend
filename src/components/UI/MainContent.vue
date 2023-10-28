@@ -18,4 +18,5 @@ export default {
         flex-flow: wrap;
         justify-content: space-between;
     }
+
 </style>

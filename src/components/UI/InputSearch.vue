@@ -26,4 +26,9 @@
   transition: ease-out 0.4s;
   outline: none;
 }
+  @media (max-width: 1179px) {
+    input{
+      max-width: 100%;
+    }
+  }
   </style>

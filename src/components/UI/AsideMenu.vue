@@ -135,8 +135,8 @@ aside ul {
   .aside {
     display: flex;
     justify-content: center;
-    height: 50px;
-    width: 5%;
+    height: 30px;
+    width: 30px;
 
 
   }
